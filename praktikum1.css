@@ -1,0 +1,171 @@
+
+*(
+    box-sizing: border-box;
+)
+.body{
+    margin: 0;
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.beranda{
+    background-image: url('gambar.jpg');
+}
+.header{
+    height: 100px;
+    padding: 120px;
+    text-align: center;
+    color: white;
+}
+.navbar{
+    text-align: center;
+    display: flex; 
+}
+
+.navbar a{
+    background-color: black;
+    color: rgb(130, 191, 209);
+    padding: 15px 15px;
+    text-decoration:none; 
+    text-align: center;
+}
+.navbar a:hover{
+    padding: 15px 15px;
+    background-color: rgb(248, 251, 255);
+    color: rgb(207, 76, 185);
+}
+
+.a{
+    flex: 25%;
+    height: 250px;
+    width: 200px;
+    font-size:30px; 
+    color: white;
+    margin: 25px 25px;
+}
+.b{
+    flex: 50%;
+    font-size:30px;
+    color: white; 
+    padding:20px 0px;
+    text-align: center;
+    border: outset black;
+    }
+.d{ 
+    flex: 25%;
+    font-size:30px;
+    color: white; 
+    padding:10px 0px;
+    text-align: left;
+}
+.e{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border: outset black;
+    flex: 100%;
+    font-size:30px;
+    color: white; 
+    padding:10px 0px;
+    text-align: center;
+    
+
+}
+.sidebar{
+    flex: 25%;
+    font-size:20px; 
+    color: white;
+    margin: 100px 0px;
+    border-bottom: outset black;
+    border-top: outset black;  
+    text-align: left;
+    border: outset black;
+}
+.sidebar a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    color: blue;
+}
+
+.main{
+    flex: 25%;
+    font-size:20px; 
+    color: white;
+    margin: 100px 0px;
+    border: outset black;
+    border-top: outset black;
+    text-align: left;
+}
+
+.main a{
+    color: white;
+    text-decoration: none;
+}
+.main a:hover{
+    color: blue;
+}
+.c{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    background-image: url('gambar2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding: 25px 25px 250px;
+    border:15px outset black;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    border:15px outset black;
+    background-image: url('gambar2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-top: 10px;
+}
+.footer{ 
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 15px;
+    
+}
+@media screen and (max-width: 800px){
+    .navbar{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    .c{
+        font-size: 30px;
+        font-style: italic;
+        text-align: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    
+.b,.sidebar,.main,.e,.d{
+    font-size: 20px;
+    margin: 0%;
+    border: outset black;
+    flex-direction: column;
+    color: white; 
+    padding:20px 0px;
+    margin-top : 10px;
+}
+.a{
+    font-size:30px; 
+    color: white;
+    margin:auto;
+}
+}
